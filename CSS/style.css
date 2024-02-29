@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Salsa&family=Varela+Round&display=swap');
+
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Raleway", sans-serif; */
+    font-family: "Varela Round", sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(140deg, #0e4b48, #1e0221, #575d5f);
+}
+html{
+    font-size: 16px;
+}
+
+
+
+/* Center Part where the game is played across 3*3 grid BOX Styling */
+.wrapper{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.container{
+    width: 70vmin;
+    height: 70vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;
+}
+
+.button-option{
+    background: #ffffff;
+    height: 22vmin;
+    width: 22vmin;
+    border: none;
+    border-radius: 12px;
+    font-size: 15vmin;
+    color: #d161ff;
+    cursor: pointer;
+    text-shadow: 1px 1px 2px #d161ff,
+                 0 0 24px #d161ff,
+                 0 0 24px #d161ff;
+}
+
+
+
+/* reset buttom styling  */
+#restart{
+    font-size: 1.3em;
+    margin-top: 1.3em;
+    padding: 1em;
+    border-radius: 45px;
+    background-color: #0a0027;
+    box-shadow: 0 0 15px rgba(244, 244, 244, .23);
+    color: #ffffff;
+    border: none;
+    position: relative;
+    margin: 1.5em auto 0 auto;
+    display: block;
+    cursor: pointer;
+}
+
+
+
+/* When the GAME is over or SomeBody WINS then this Section get Active */
+.popup{
+    background: linear-gradient(140deg, #0e4b48, #1e0221, #575d5f);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 12vmin;
+    z-index: 2;
+}
+
+#new-game{
+    font-size: .35em;
+    padding: .5em 1em;
+    background-color: #c4b9e4;
+    color: #ffffff;
+    border-radius: 90px;
+    border: none;
+    cursor: pointer;
+}
+
+#message{
+    color: #ffffff;
+    text-align: center;
+    font-size: .5em;
+}
+
+/* This is TOGGLE by the JAVASCRIPT */
+.popup.hide{
+    display: none;
+}
+
+
+
+
+/* footer Section Styling part */
+.footer-section{
+    position: relative;
+    bottom: -98vh;
+}
+
+footer{
+    background-color: rgb(235, 200, 200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+    /* font-size: 40px; */
+}
+
+
+
+
+/* Comapartable for all the Screen */
+@media screen and (max-width: 410px) {
+    footer p{
+        font-size: 12.5px;
+    }
+    
+}
